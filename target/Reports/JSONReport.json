@@ -1,0 +1,116 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-10T15:57:39.725Z",
+        "line": 5,
+        "name": "To To validate searching the account using mobile number when user forgets password",
+        "description": "",
+        "id": "to-validate-the-forgot-passsword-functionality;to-to-validate-searching-the-account-using-mobile-number-when-user-forgets-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11770180400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter in the login page",
+            "match": {
+              "location": "LoginStepDefinition.user_enter_in_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7060083500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click  the forgot link",
+            "match": {
+              "location": "LoginStepDefinition.click_the_forgot_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31140600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User will be Redirect to Find Your Account Page",
+            "match": {
+              "location": "LoginStepDefinition.user_will_be_Redirect_to_Find_Your_Account_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 342304300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enter invalid username",
+            "match": {
+              "location": "LoginStepDefinition.user_enter_invalid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2091002000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click  the search button",
+            "match": {
+              "location": "LoginStepDefinition.user_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142945300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User will  see the No Search Results in the Find you Account Page",
+            "match": {
+              "location": "LoginStepDefinition.user_will_see_the_No_Search_Results_in_the_Find_you_Account_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@forgot"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the forgot passsword functionality",
+    "description": "",
+    "id": "to-validate-the-forgot-passsword-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/forgot.feature",
+    "tags": [
+      {
+        "name": "@forgot",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

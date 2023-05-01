@@ -1,0 +1,291 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-11T06:20:20.992Z",
+        "line": 13,
+        "name": "To validate the invaid username and Invalid password",
+        "description": "",
+        "id": "to-check-the-login-functionality;to-validate-the-invaid-username-and-invalid-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 756500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13116846000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter in the login page",
+            "match": {
+              "location": "LoginStepDefinition.user_enter_in_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213613400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User give invalid \"nfdn\" and \"234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nfdn\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"234\"",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinition.user_give_invalid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5099089300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click the login button",
+            "match": {
+              "location": "LoginStepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26337900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be in invalid credentials page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_br_in_invalid_credentials_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-11T06:20:39.555Z",
+        "line": 16,
+        "name": "To validate login functionality without entering login credentials",
+        "description": "",
+        "id": "to-check-the-login-functionality;to-validate-login-functionality-without-entering-login-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 115100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14452838500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter in the login page",
+            "match": {
+              "location": "LoginStepDefinition.user_enter_in_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3117478300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click the login button without entering any login credentials",
+            "match": {
+              "location": "LoginStepDefinition.user_click_the_login_button_without_entering_any_login_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19790800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should be in invalid credentials page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_br_in_invalid_credentials_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "To check the login functionality",
+    "description": "",
+    "id": "to-check-the-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/cu.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-11T06:20:57.154Z",
+        "line": 5,
+        "name": "To To validate searching the account using mobile number when user forgets password",
+        "description": "",
+        "id": "to-validate-the-forgot-passsword-functionality;to-to-validate-searching-the-account-using-mobile-number-when-user-forgets-password",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.step.Hooks.afterScenario(Hooks.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "duration": 3265500,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15119794600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter in the login page",
+            "match": {
+              "location": "LoginStepDefinition.user_enter_in_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8165910600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click  the forgot link",
+            "match": {
+              "location": "LoginStepDefinition.click_the_forgot_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19074400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User will be Redirect to Find Your Account Page",
+            "match": {
+              "location": "LoginStepDefinition.user_will_be_Redirect_to_Find_Your_Account_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 185231200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enter invalid username",
+            "match": {
+              "location": "LoginStepDefinition.user_enter_invalid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2085692600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click  the search button",
+            "match": {
+              "location": "LoginStepDefinition.user_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),\u0027Please fill in at least one field\u0027)]\"}\n  (Session info: MicrosoftEdge\u003d110.0.1587.69)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.2.0\u0027, revision: \u002786eb611648\u0027\nSystem info: host: \u0027DESKTOP-GSO9MPU\u0027, ip: \u0027192.168.1.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [5c29b7f2d76c599ae2b42060d48ce0d7, findElement {using\u003dxpath, value\u003d//div[contains(text(),\u0027Please fill in at least one field\u0027)]}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63064}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\\Users\\DELL\\AppData\\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63064/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5c29b7f2d76c599ae2b42060d48ce0d7\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:376)\r\n\tat org.step.LoginStepDefinition.user_will_see_the_No_Search_Results_in_the_Find_you_Account_Page(LoginStepDefinition.java:163)\r\n\tat ✽.User will  see the No Search Results in the Find you Account Page(file:src/test/resources/Feature/forgot.feature:11)\r\n",
+              "duration": 78029700,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User will  see the No Search Results in the Find you Account Page",
+            "match": {
+              "location": "LoginStepDefinition.user_will_see_the_No_Search_Results_in_the_Find_you_Account_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@forgot"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the forgot passsword functionality",
+    "description": "",
+    "id": "to-validate-the-forgot-passsword-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/forgot.feature",
+    "tags": [
+      {
+        "name": "@forgot",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

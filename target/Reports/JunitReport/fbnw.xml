@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="61.886963">
+<testcase classname="To check the login functionality" name="To validate the invaid username and Invalid password" time="18.547922">
+<system-out><![CDATA[Given User enter in the login page..........................................passed
+When User give invalid "nfdn" and "234".....................................passed
+And User click the login button.............................................passed
+Then User should be in invalid credentials page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the login functionality" name="To validate login functionality without entering login credentials" time="17.598664">
+<system-out><![CDATA[Given User enter in the login page..........................................passed
+When User click the login button without entering any login credentials.....passed
+Then User should be in invalid credentials page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the forgot passsword functionality" name="To To validate searching the account using mobile number when user forgets password" time="25.740377">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'Please fill in at least one field')]&quot;}&#10;  (Session info: MicrosoftEdge=110.0.1587.69)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.2.0', revision: '86eb611648'&#10;System info: host: 'DESKTOP-GSO9MPU', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [5c29b7f2d76c599ae2b42060d48ce0d7, findElement {using=xpath, value=//div[contains(text(),'Please fill in at least one field')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63064}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63064/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5c29b7f2d76c599ae2b42060d48ce0d7&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#13;&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:376)&#13;&#10;&#9;at org.step.LoginStepDefinition.user_will_see_the_No_Search_Results_in_the_Find_you_Account_Page(LoginStepDefinition.java:163)&#13;&#10;&#9;at ✽.User will  see the No Search Results in the Find you Account Page(file:src/test/resources/Feature/forgot.feature:11)&#13;&#10;"><![CDATA[Given User enter in the login page..........................................passed
+And Click  the forgot link..................................................passed
+Then User will be Redirect to Find Your Account Page........................passed
+When User enter invalid username............................................passed
+And User click  the search button...........................................passed
+Then User will  see the No Search Results in the Find you Account Page......failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Please fill in at least one field')]"}
+  (Session info: MicrosoftEdge=110.0.1587.69)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'DESKTOP-GSO9MPU', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5c29b7f2d76c599ae2b42060d48ce0d7, findElement {using=xpath, value=//div[contains(text(),'Please fill in at least one field')]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63064}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63064/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c29b7f2d76c599ae2b42060d48ce0d7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:376)
+	at org.step.LoginStepDefinition.user_will_see_the_No_Search_Results_in_the_Find_you_Account_Page(LoginStepDefinition.java:163)
+	at ✽.User will  see the No Search Results in the Find you Account Page(file:src/test/resources/Feature/forgot.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
